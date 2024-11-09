@@ -97,7 +97,7 @@
   text-decoration: none;
   color: black;
 }
-.close-sign{
+.close-sign {
   position: absolute;
   color: black;
   top: 0;
@@ -106,7 +106,27 @@
   font-weight: bold;
   font-size: 2rem;
 }
-
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 1rem;
+  background: rgb(220, 220, 220);
+}
+.footer .list a {
+  text-decoration: none;
+  color: black;
+}
+.footer .list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bar {
+  background: rgb(123, 123, 123);
+  font-size: .8rem;
+  text-align: center;
+  padding: 0.2rem;
+}
 
 @media screen and (max-width: 500px) {
   .top-nav {
@@ -145,10 +165,18 @@
     font-weight: 300;
     line-height: 2rem;
   }
-  .hero .right{
+  .hero .right {
     width: 100vw;
   }
   .hero .right img {
     width: 100vw;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  .bar {
+    font-size: 0.5rem;
   }
 }
