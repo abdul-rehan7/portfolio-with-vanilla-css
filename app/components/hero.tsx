@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function hero() {
+export default function Hero() {
   return (
     <div>
       <div className="hero">
@@ -10,7 +10,7 @@ export default function hero() {
         <p>Creating digital products and experiences for all-kind of desires</p>
       </div>
       <div className="right">
-        <img src="/images/Designer-bro.png" alt="" />
+        <img src="/Designer-bro.png" alt="" />
       </div>
     </div>
     </div>
