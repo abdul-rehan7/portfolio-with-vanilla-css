@@ -18,12 +18,15 @@
   align-items: center;
   justify-content: space-between;
 }
+.hamburger {
+  display: none;
+}
+
 .mail a {
   font-size: 1.1rem;
   text-decoration: none;
   list-style: none;
   color: black;
-  
 }
 .navbar {
   font-size: 1.2rem;
@@ -61,15 +64,60 @@
   width: 65vw;
   /* background: #29e20c; */
 }
-.hero .left p{
-    font-size: 2rem;
-    font-weight: 300;
+.hero .left p {
+  font-size: 2rem;
+  font-weight: 300;
 }
 .hero .right {
   width: 60vw;
   font-size: 2rem;
   /* background: #c41010; */
 }
-.hero .right img{
-    width: 40vw;
+.hero .right img {
+  width: 40vw;
+}
+
+@media screen and (max-width: 500px) {
+  .top-nav {
+    padding: 0.5rem 1rem;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .hamburger .line {
+    height: 4px;
+    width: 2rem;
+    border-radius: 1rem;
+    background: black;
+  }
+  .navbar a {
+    display: none;
+  }
+  .mail {
+    display: none;
+  }
+  .contact-us {
+    display: none;
+  }
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero .left {
+    width: 90vw;
+    font-size: 2.5rem;
+  }
+  .hero .left p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2rem;
+  }
+  .hero .right{
+    width: 100vw;
+  }
+  .hero .right img {
+    width: 100vw;
+  }
 }
