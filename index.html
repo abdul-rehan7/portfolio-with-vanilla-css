@@ -11,7 +11,7 @@
     <!-- =================== NAVBAR ================== -->
 
     <nav class="top-nav">
-      <div class="hamburger">
+      <div class="hamburger" onclick="toggleSidebar()">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
@@ -29,6 +29,17 @@
       <div class="contact-us">CONTACT</div>
     </nav>
 
+    <!-- Sidebar for Mobile -->
+    <div class="sidebar" id="sidebar">
+      <div class="close-sign" onclick="toggleSidebar()">×</div>
+      <div>
+        <a href="#">Home</a>
+        <a href="#">Projects</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
     <!-- =================== HERO SECTION ================== -->
 
     <div class="hero">
@@ -41,5 +52,12 @@
         <img src="/images/Designer-bro.png" alt="" />
       </div>
     </div>
+
+    <script>
+      function toggleSidebar() {
+        const sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
