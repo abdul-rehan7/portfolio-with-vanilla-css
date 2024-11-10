@@ -1,6 +1,6 @@
 "use client"
 import React, { useRef, useEffect } from 'react';
-import Typed from 'typed.js';
+import Typed from 'typed.js'
 
 export default function Hero() {
   const el = useRef(null);
