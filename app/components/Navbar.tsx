@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function Navbar() {
@@ -20,10 +21,10 @@ export default function Navbar() {
       {isSidebarOpen && (
         <div className="sidebar">
           <div className="close-sign" onClick={toggleSidebar}>×</div>
-          <a href="">Home</a>
-          <a href="">Projects</a>
-          <a href="">About</a>
-          <a href="">Contact</a>
+          <a href="/">Home</a>
+          <a href="/projects">Projects</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
         </div>
       )}
 
@@ -33,10 +34,10 @@ export default function Navbar() {
 
       {/* Hide this full navbar on mobile */}
       <div className="navbar">
-        <a href="">Home</a>
-        <a href="">Projects</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
+        <Link href="/">Home</Link>
+        <Link href="/projects">Projects</Link>
+        <Link href="/about">About</Link>
+        <Link href="/contact">Contact</Link>
       </div>
 
       <div className="contact-us">Contact</div>

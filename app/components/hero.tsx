@@ -16,7 +16,7 @@ export default function Hero() {
       typed.destroy();
     };
   }, []);
-
+  
   return (
     <div>
       <div className="hero">
