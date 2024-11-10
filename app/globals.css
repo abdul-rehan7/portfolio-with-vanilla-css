@@ -12,11 +12,45 @@
   padding: 0;
   margin: 0;
 }
-.my-heading{
+.my-heading {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
   padding: 2rem 1rem;
+}
+.project-section {
+  display: grid;
+  padding: 2rem;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.my-card {
+  display: flex;
+  text-align: left;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 25vw;
+  border: 1px solid rgb(215, 215, 215);
+  flex-direction: column;
+  justify-content: center;
+}
+.my-card .link {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(15, 104, 237);
+}
+.title {
+  font-size: 1.3rem;
+  text-align: left;
+  font-weight: 500;
+}
+.my-card p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #a9a9a9;
 }
 .top-nav {
   padding: 1rem 2rem;
@@ -45,9 +79,30 @@
   text-decoration: none;
   color: black;
 }
-.navbar a:hover{
+.navbar a:hover {
   color: #a9a9a9;
-  transition: .3s;
+  transition: 0.3s;
+}
+/* --------------------- ABOUT STYLES ----------------------- */
+
+.about-main {
+  display: flex;
+  align-items: center;
+  min-height: 20rem;
+  background: url("/banner1.jpg") center/cover no-repeat;
+  text-align: center;
+  justify-content: center;
+}
+.about-title {
+  color: white;
+  margin: auto;
+  text-align: center;
+  z-index: 2000;
+}
+
+.about-data {
+  padding: 0.7rem 6rem;
+  font-size: 1.2rem;
 }
 .contact-us {
   border: 0.1rem solid black;
@@ -133,14 +188,14 @@
 }
 .bar {
   background: rgb(181, 181, 181);
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-align: center;
   padding: 0.2rem;
 }
 
 @media screen and (max-width: 500px) {
-  .my-heading{
-   font-size: 1.2rem;
+  .my-heading {
+    font-size: 1.2rem;
   }
   .top-nav {
     padding: 0.5rem 1rem;
@@ -191,5 +246,19 @@
   }
   .bar {
     font-size: 0.5rem;
+  }
+  .about-main {
+    min-height: 10rem;
+  }
+  .about-data {
+    padding: 0.7rem 0.7rem;
+    font-size: 0.5rem;
+  }
+  .project-section {
+    grid-template-columns: 1fr;
+    padding: 1rem 0rem;
+  }
+  .my-card {
+    width: 80vw;
   }
 }
